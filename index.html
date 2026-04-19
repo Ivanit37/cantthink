@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cant-think</title>
+    <!-- We are using Tailwind CSS for quick, beautiful styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apple-like system font stack and smoothing */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            letter-spacing: -0.015em; /* Apple's signature tight tracking for large text */
+        }
+
+        /* Smooth, premium fade-in animation */
+        .fade-in-up {
+            animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-[100dvh] flex flex-col justify-between items-center text-center px-6 bg-[#fbfbfd]">
+
+    <!-- Top spacer for balance -->
+    <div class="h-24 w-full"></div>
+
+    <!-- Main Content Area -->
+    <main class="flex flex-col justify-center items-center max-w-3xl w-full">
+        <h1 class="text-5xl md:text-7xl font-semibold text-[#1d1d1f] mb-4 fade-in-up">
+            hiicantthink
+        </h1>
+        
+        <!-- We can add a subtitle or short bio here later if you want! -->
+        <p class="text-lg md:text-xl text-[#86868b] font-normal fade-in-up delay-1 max-w-md">
+            Thinking in progress.
+        </p>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="w-full pb-10 fade-in-up delay-2">
+        <div class="text-[13px] text-[#86868b] leading-relaxed">
+            <p class="mb-1">General Inquiries</p>
+            <a href="mailto:hiimij@cant-think.com" class="text-[#0066cc] hover:underline transition-all duration-300">
+                hiimij@cant-think.com
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
